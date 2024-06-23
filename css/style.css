@@ -1,0 +1,757 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Bebas Neue", sans-serif;
+}
+/* start header */
+.container .header {
+    width: 100%;
+    position: fixed;
+    background-color: rgba(128, 128, 128, 0.218);
+    z-index: 1000;
+}
+.container .header nav {
+    width: 90%;
+        margin: auto;
+}
+.container .header nav .logo {
+    float: left;
+}
+.container .header nav ul {
+    float: right;
+    padding: 15px 0px;
+}
+.container .header nav ul li{
+    display: inline-block;
+    margin-left: 10px;
+    list-style: none;
+}
+.container .header nav ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    position: relative;
+}
+.container .header nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    bottom: 4px;
+}
+.container .header nav ul li a:hover::before {
+    width: 100%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.container .header nav ul li #blog {
+    position: relative;
+}
+.container .header nav ul li #blog .blog {
+    position: absolute;
+    bottom: -45px;
+    right: -55px;
+    width: 150px;
+    padding: 5px 5px;
+    text-align: center;
+    border-radius: 8px;
+    display: none;
+    background-color: rgba(128, 128, 128, 0.16);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.container .header nav ul li #blog:hover .blog {
+    display: block;
+    background-color: rgba(128, 128, 128, 0.218);
+}
+.container .header nav ul li a , .container .header nav .logo {
+    text-transform: capitalize;
+    padding: 15px 0px;
+    color: white;
+    font-family: sans-serif;
+}
+.container .header nav .logo span , .container .header nav .logo i {
+    font-size: 25px;
+}
+/* end header */
+/* hero start */
+.container #hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/hero-img.jpg);
+    background-size: cover;
+    position: relative;
+}
+.container #hero .hero-parent  {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+.container #hero .hero-parent .hero-text {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+.container #hero .hero-parent .hero-text h1 {
+    font-size: 100px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'Bebas Neue';
+}
+.container #hero .hero-parent .hero-text p {
+    font-size: 35px;
+    color: white;
+    opacity: 0.7;
+}
+.container #hero .hero-parent .hero-text .hero-btn button {
+    padding: 10px 25px;
+    margin: 10px 5px;
+    font-size: 25px;
+    text-transform: capitalize;
+    border: none;
+}
+.container #hero .hero-parent .hero-text .hero-btn .btn-one {
+    background-color: black;
+    color: white;
+}
+.container #hero .hero-parent .hero-text .hero-btn .btn-two {
+    background-color: rgba(128, 128, 128, 0.548);
+}
+/* hero end */
+/*  */
+.container #about {
+    width: 100%;
+    height: 80vh;
+}
+.container #about .about-parent{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 30%;
+    overflow: auto;
+}
+.container #about .about-parent .about-title , .container #galary .galary-title , .container #protifolio .protifolio-parent .protifolio-title , .container #pricing-section .pricing-title , .container #our-team .our-team-parent .our-team-title , .container #news .news-parent .new-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.container #about .about-parent .about-title .under-line , .container #galary .galary-title .under-line , .container #protifolio .protifolio-parent .protifolio-title .under-line , .container #pricing-section .pricing-title .under-line , .container #our-team .our-team-parent .our-team-title .under-line , .container #news .news-parent .new-title .under-line {
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    margin: auto;
+}
+.container #about .about-parent .about-title h2 , .container #galary .galary-title h2 , .container #protifolio .protifolio-parent .protifolio-title h2 , .container #pricing-section .pricing-title h2 , .container #our-team .our-team-parent .our-team-title h2 , .container #news .news-parent .new-title h2 {
+    font-size: 55px;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    padding: 15px 0px;
+}
+.container #about .about-parent .box {
+    float: left;
+    width: 30%;
+    padding: 20px 15px;
+    text-align: center;
+    border: 2px solid gray;
+    position: relative;
+    padding: 10px;
+}
+.container #about .about-parent .box::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    background-color: rgba(128, 128, 128, 0.249);
+}
+.container #about .about-parent .box:hover::before {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.container #about .about-parent .box:hover h2 {
+    color: black;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.container #about .about-parent .box h2 {
+    font-size: 35px;
+    font-weight: 600;
+    padding: 5px 0px 2px 0px;
+    color: rgb(73, 72, 72);
+}
+.container #about .about-parent .box p {
+    font-size: 18px;
+    opacity: 0.7;
+}
+.container #about .about-parent .box i {
+    color: gray;
+    font-size: 35px;
+}
+.container #about .about-parent .center-box {
+    margin:0px 5%;
+}
+/*  */
+/*  */
+.container #galary {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.295);
+}
+.container #galary .galary-parent {
+    width: 90%;
+    margin: auto;
+}
+.container #galary .galary-parent .box , .container #protifolio .protifolio-parent .museum-box {
+    height: 200px;
+    float: left;
+    width: 30%;
+    height: 250px;
+    margin-top:25px;
+    padding: 10px;
+    background-color: gray;
+    position: relative;
+    text-align: center;
+}
+.container #galary .galary-parent .box:hover .overlay {
+    display: block;
+}
+.container #galary .galary-parent .box .overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    text-align: center;
+}
+.container #galary .galary-parent .box .overlay .title {
+    margin-top: 110px;
+    font-size: 25px;
+}
+.container #galary .galary-parent .box .overlay .description {
+    font-size: 15px;
+    opacity: 0.7;
+}
+.container #galary .galary-parent .box .overlay .title , .container #galary .galary-parent .box .overlay .description {
+    color: white;
+}
+.container #galary .galary-parent .box .overlay i {
+    color: gray;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.container #galary .galary-parent .box::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 0px;
+    top: 0;
+    right: 0;
+    background-color: rgba(128, 128, 128, 0.39);
+}
+.container #galary .galary-parent .box:hover::before {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.container #galary .galary-parent .center-box , .container #protifolio .protifolio-parent .center-box {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.container #galary .galary-parent .box img {
+    width: 100%;
+    height: 100%;
+}
+/*  */
+/*  */
+.container #protifolio {
+    width: 100%;
+    height: 80vh;
+}
+.container #protifolio .protifolio-parent {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: 15%;
+    overflow: hidden;
+}
+.container #protifolio .protifolio-parent .museum-box {
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.147);
+    padding: 25px 15px;
+}
+.container #protifolio .protifolio-parent .museum-box .title {
+    font-size: 25px;
+    color: black;
+}
+.container #protifolio .protifolio-parent .museum-box .description {
+    font-size: 20px;
+}
+.container #protifolio .protifolio-parent .museum-box i {
+    font-size: 18px;
+    color:gray;
+}
+.container #protifolio .protifolio-parent .museum-box:hover i {
+    color: black;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+/*  */
+/*  */
+.container #price{
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(128, 128, 128, 0.227);
+}
+.container #price .price-parent {
+    width: 90%;
+    height: 60%;
+    position: relative;
+    top: auto;
+    margin: auto;
+}
+.container #price .price-parent .price-text {
+    padding: 10px 25px;
+    float: left;
+    /* margin-right: 5%; */
+}
+.container #price .price-parent .price-img{
+    float: right;
+    background-color: black;
+    margin-left: 5%;
+    background-image: url(/img/pexels-omar-167169385-19277210.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container #price .price-parent .price-text .price-title h2 {
+    font-size: 55px;
+        font-weight: 600;
+        font-family: sans-serif;
+        text-transform: capitalize;
+        padding: 15px 0px;
+}
+.container #price .price-parent .price-text .price-title .under-line {
+    width: 100px;
+        height: 5px;
+        background-color: black;
+}
+.container #price .price-parent .price-text , .container #price .price-parent .price-img {
+    height: 600px;
+    width: 45%;
+    position: relative;
+    top: 10%;
+}
+.container #price .price-parent .price-text .box {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.207);
+    margin-top: 15px;
+    font-size: 30px;
+        color: rgba(0, 0, 0, 0.7);
+}
+.container #price .price-parent .price-text .box i {
+    font-size: 25px;
+    color: black;
+}
+.container #price .price-parent .price-text .box .subtitle {
+    font-size: 20px;
+    color: black;
+    opacity: 0.7;
+}
+/*  */
+/*  */
+.container #team {
+    width: 100%;
+    height: 40vh;
+    background-image: url(/img/pexels-diego-f-parra-33199-15131496.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container #team .team-parent {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    overflow: auto;
+}
+.container #team .team-parent .box {
+    width:20%;
+    float: left;
+    background-color:rgba(0, 0, 0, 0.456);
+        position: relative;
+            top: 40%;
+            text-align: center;
+            padding: 15px;
+}
+.container #team .team-parent .center-box {
+    margin: 0px 5%;
+}
+.container #team .team-parent .box h2 {
+    font-size: 35px;
+    color: gray;
+}
+.container #team .team-parent .box p {
+    font-size: 25px;
+    opacity: 0.7;
+    color: gray;
+}
+/*  */
+/*  */
+.container #pricing-section {
+    width: 100%;
+    height: 70vh;
+}
+.container #pricing-section .pricing-table {
+    width: 90%;
+    margin: auto;
+}
+.container #pricing-section .pricing-table .pricing-box {
+    width: 30%;
+    float: left;
+    background-color: rgba(128, 128, 128, 0.271);
+    padding: 25px 15px;
+    text-align: center;
+    position: relative;
+}
+.container #pricing-section .pricing-table .pricing-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: height 0.3s ease;
+}
+.container #pricing-section .pricing-table .pricing-box:hover::before {
+    height: 100%;
+}
+.container #pricing-section .pricing-table .pricing-box .title {
+    font-size: 30px;
+}
+.container #pricing-section .pricing-table .pricing-box .subtitle {
+    font-size: 25px;
+    margin: 5px 0px;
+}
+.container #pricing-section .pricing-table .pricing-box .price {
+    font-size: 30px;
+    opacity: 0.6;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid;
+    margin: auto;
+    line-height: 50px;
+}
+.container #pricing-section .pricing-table .pricing-box .features li {
+    font-size: 20px;
+    margin: 10px;
+    list-style: none;
+}
+.container #pricing-section .pricing-table .center-box {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.container #pricing-section .pricing-table .pricing-box button {
+    background-color: black;
+    padding: 10px 10px;
+    color: white;
+    font-size: 25px;
+    border: none;
+    margin-top: 10px;
+}
+/*  */
+/*  */
+.container #team2 {
+    margin-top: 50px;
+    width: 100%;
+    height: 30vh;
+    background-image: url(/img/pexels-christine-schmiederer-589043-1446243.jpg);
+    background-attachment: fixed;
+}
+.container #team2 .team2-parent {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    overflow: auto;
+}
+.container #team2 .team2-parent .team2-box {
+    width: 40%;
+    float: left;
+    margin: 45px 5%;
+    padding: 15px;
+}
+.container #team2 .team2-parent .team2-box h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.container #team2 .team2-parent .team2-box .team2-text p {
+    font-size: 15px;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+.container #team2 .team2-parent .team2-box .team2-p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+.container #team2 .team2-parent .team2-box .team2-img {
+    width: 50px;
+    height: 50px;
+}
+.container #team2 .team2-parent .team2-box .team2-img , .container #team2 .team2-parent .team2-box .team2-text {
+    display: inline-block;
+}
+.container #team2 .team2-parent .team2-box .team2-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/*  */
+/*  */
+.container #our-team {
+    width: 100%;
+    height: 80vh;
+}
+.container #our-team .our-team-parent {
+    width: 90%;
+    position: relative;
+    top: 20%;
+    margin: auto;
+    overflow: auto;
+}
+.container #our-team .our-team-parent .box {
+    width: 30%;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    position: relative;
+    background-color: gray;
+    padding: 10px 25px;
+}
+.container #our-team .our-team-parent .box::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.151);
+    top: 0;
+    left: 0;
+    z-index: 11;
+}
+.container #our-team .our-team-parent .box:hover::before {
+    height: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.container #our-team .our-team-parent .box:hover h3 {
+    color: white;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.container #our-team .our-team-parent .box:hover .icon {
+    background-color: rgba(0, 0, 0, 0.423);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.container #our-team .our-team-parent .box:hover .icon i {
+    color: white;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.container #our-team .our-team-parent .our-team-img {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+}
+.container #our-team .our-team-parent .our-team-img .icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.container #our-team .our-team-parent .our-team-img .icon i {
+    display: block;
+    margin-left: auto;
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    line-height: 25px;
+    color: gray;
+    font-size: 20px;
+}
+.container #our-team .our-team-parent .our-team-img img {
+    width: 100%;
+    height: 100%;
+}
+.container #our-team .our-team-parent .center-box {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.container #our-team .our-team-parent .box .our-team-text {
+    padding: 10px;
+}
+.container #our-team .our-team-parent .box .our-team-text h3 {
+    font-size: 25px;
+}
+.container #our-team .our-team-parent .box .our-team-text p {
+    font-size: 20px;
+}
+/*  */
+/*  */
+.container #news {
+    width: 100%;
+    height: 80vh;
+    margin-top: 50px;
+}
+.container #news .news-parent {
+    width: 90%;
+    margin: auto;
+}
+.container #news .news-parent .box {
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding: 25px 10px;
+    border: 1px solid gray;
+    position: relative;
+}
+.container #news .news-parent .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.134);
+    width: 100%;
+    height: 0%;
+}
+.container #news .news-parent .box:hover::before {
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    height: 100%;
+}
+.container #news .news-parent .box:hover i {
+    color: gray;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.container #news .news-parent .box .i-one , .i-two , .i-thre {
+    display: inline-block;
+    margin: 15px;
+    font-size: 20px;
+}
+.container #news .news-parent .box .news-img {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+}
+.container #news .news-parent .box .news-img img {
+    width: 100%;
+    height: 100%;
+}
+.container #news .news-parent .center-box {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+/*  */
+/*  */
+footer .footer-parent {
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+}
+footer .footer-parent .footer-content {
+    width: 50%;
+    margin: auto;
+    height: 100px;
+    position: relative;
+    top: 30%;
+    text-align: center;
+}
+footer .footer-parent .footer-content .logo {
+    font-size: 25px;
+    margin-top: 15px;
+        color: white;
+}
+footer .footer-parent .footer-content .links {
+    font-size: 25px;
+    margin-top: 15px;
+    color: white;
+}
+footer .footer-parent .footer-content .links i {
+    margin-right: 10px;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+footer .footer-parent .footer-content .text {
+    color: white;
+    margin-top: 20px;
+    text-transform: capitalize;
+    opacity: 0.;
+}
+/*  */
