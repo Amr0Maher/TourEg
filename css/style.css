@@ -340,7 +340,6 @@ body {
 .container #price .price-parent .price-text {
     padding: 10px 25px;
     float: left;
-    /* margin-right: 5%; */
 }
 .container #price .price-parent .price-img{
     float: right;
