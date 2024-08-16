@@ -98,6 +98,7 @@ body {
 .container .header nav .logo span,
 .container .header nav .logo i {
     font-size: 25px;
+    color:white;
 }
 
 /* end header */
