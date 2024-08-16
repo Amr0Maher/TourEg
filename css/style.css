@@ -75,7 +75,7 @@ body {
     text-align: center;
     border-radius: 8px;
     display: none;
-    background-color: rgba(128, 128, 128, 0.16);
+    background-color: black;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
@@ -84,7 +84,6 @@ body {
 
 .container .header nav ul li #blog:hover .blog {
     display: block;
-    background-color: rgba(128, 128, 128, 0.218);
 }
 
 .container .header nav ul li a,
