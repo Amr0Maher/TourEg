@@ -36,6 +36,3 @@ This project is licensed under the MIT License. For detailed information, please
 CSS: For enabling classic layout techniques and creative design solutions.
 GitHub: For providing a platform to showcase and collaborate on this project.
 Thank you for visiting TourEg Museum! We hope you enjoy the blend of historical insight and design exploration. If you have any questions, suggestions, or feedback, don’t hesitate to reach out!
-
-
-هذا النص مصمم ليكون أكثر جاذبية ويعكس جوانب المشروع بطريقة مشوقة. إذا كان هناك أي تفاصيل إضافية تود تضمينها أو تعديلات أخرى تفضلها، لا تتردد في إخباري!
