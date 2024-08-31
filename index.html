@@ -2,267 +2,211 @@
 <html lang="en">
 
 <head>
-    <!-- Charset declaration for the webpage to ensure proper rendering of characters -->
     <meta charset="UTF-8">
-    
-    <!-- Viewport settings for responsive design on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Preconnect to optimize loading times for Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    
-    <!-- Preconnect to optimize loading times for Google Fonts CDN -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Importing Bebas Neue font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    
-    <!-- Importing Font Awesome for icon usage -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
-    <!-- Linking to the main stylesheet for custom styles -->
     <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Title of the webpage displayed on the browser tab -->
     <title>TourEg</title>
 </head>
 
-
 <body>
- <div class="container">
-       <div class="header">
-    <nav>
-        <!-- Logo section -->
-        <div class="logo">
-            <i class="fa-solid fa-tent"></i> <!-- Logo icon -->
-            <span>TourEg</span> <!-- Logo text -->
+    <div class="container">
+        <div class="header">
+            <nav>
+                <div class="logo">
+                    <i class="fa-solid fa-tent"></i>
+                    <span>TourEg</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#" class="active">home</a>
+                    </li>
+                    <li>
+                        <a href="#about-us">about</a>
+                    </li>
+                    <li>
+                        <a href="#">galary</a>
+                    </li>
+                    <li>
+                        <a href="#">services</a>
+                    </li>
+                    <li>
+                        <a href="#">prices</a>
+                    </li>
+                    <li>
+                        <a href="#">team</a>
+                    </li>
+                    <li>
+                        <a href="#" id="blog">blog
+                            <div class="blog">
+                                <span>blog post</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <ul>
-            <!-- Navigation menu items -->
-            <li>
-                <a href="#" class="active">home</a> <!-- Active link for the homepage -->
-            </li>
-            <li>
-                <a href="#about-us">about</a> <!-- Link to the 'About Us' section -->
-            </li>
-            <li>
-                <a href="#">gallary</a> <!-- Link to 'Gallery' (note: 'galery' is the correct spelling) -->
-            </li>
-            <li>
-                <a href="#">services</a> <!-- Link to the 'Services' page -->
-            </li>
-            <li>
-                <a href="#">prices</a> <!-- Link to the 'Prices' page -->
-            </li>
-            <li>
-                <a href="#">team</a> <!-- Link to the 'Team' page -->
-            </li>
-            <li>
-                <a href="#" id="blog">blog
-                    <!-- Blog submenu -->
-                    <div class="blog">
-                        <span>blog post</span>
+        <section id="hero">
+            <div class="hero-parent">
+                <div class="hero-text">
+                    <h1>Hieroglyphic Wonders</h1>
+                    <p>Exploring the Enigmatic World of Egyptian Hieroglyphs and Their Cultural Significance"</p>
+                    <div class="hero-btn">
+                        <button class="btn-one">explore now</button>
+                        <button class="btn-two">learn more</button>
                     </div>
-                </a>
-            </li>
-            <li>
-                <a href="">contact</a> <!-- Link to the 'Contact' page -->
-            </li>
-        </ul>
-    </nav>
-</div>
-
-       <!-- Hero section -->
-<section id="hero">
-    <!-- Main container for the hero section -->
-    <div class="hero-parent">
-        <!-- Container for text content within the hero section -->
-        <div class="hero-text">
-            <!-- Main heading for the hero section -->
-            <h1>Hieroglyphic Wonders</h1>
-            <!-- Descriptive paragraph explaining the hero section -->
-            <p>Exploring the Enigmatic World of Egyptian Hieroglyphs and Their Cultural Significance</p>
-            <!-- Container for action buttons -->
-            <div class="hero-btn">
-                <!-- Button to explore now -->
-                <button class="btn-one">explore now</button>
-                <!-- Button to learn more -->
-                <button class="btn-two">learn more</button>
-            </div>
-        </div>
-    </div>
-</section>
-       <!-- About section of the museum -->
-<section id="about">
-    <!-- Main container for the about section -->
-    <div class="about-parent">
-        <!-- Section title -->
-        <div class="about-title">
-            <h2>about</h2> <!-- Main heading for the section -->
-            <div class="under-line"></div> <!-- Underline for the section title -->
-        </div>
-        <!-- Box containing information about the museum's history -->
-        <div class="box">
-            <div class="icon"><i class="fas fa-history"></i></div> <!-- Icon representing history -->
-            <h2>Museum History</h2> <!-- Subheading for the museum's history -->
-            <p>Exploring the Museum's Foundation and Vision</p> <!-- Description of the museum's history -->
-        </div>
-
-        <!-- Box containing information about the museum's collections -->
-        <div class="box center-box">
-            <div class="icon"><i class="fas fa-archive"></i></div> <!-- Icon representing archive/collections -->
-            <h2>Our Collections</h2> <!-- Subheading for the museum's collections -->
-            <p>Reviewing Unique Artifacts in the Museum</p> <!-- Description of the museum's collections -->
-        </div>
-
-        <!-- Box containing information about cultural initiatives -->
-        <div class="box">
-            <div class="icon"><i class="fas fa-calendar-alt"></i></div> <!-- Icon representing calendar/events -->
-            <h2>Cultural Initiatives</h2> <!-- Subheading for cultural initiatives -->
-            <p>A Close Look at Events and Educational Programs</p> <!-- Description of cultural initiatives -->
-        </div>
-    </div>
-</section>
-  <!-- Start of the gallery section -->
-<section id="gallery">
-    <div class="gallery-parent">
-        <!-- Gallery title -->
-        <div class="gallery-title">
-            <h2>Masterpieces</h2> <!-- Section heading -->
-            <div class="under-line"></div> <!-- Underline below the title -->
-        </div>
-        
-        <!-- Individual gallery item -->
-        <div class="gallery-item">
-            <img src="img/pexels-antonio-filigno-159809-10210879.jpg" alt="Art Collection Display"> <!-- Image of the item -->
-            <div class="overlay">
-                <div class="title">Art Collection</div> <!-- Title of the item -->
-                <div class="description">Explore our diverse collection of artworks.</div> <!-- Description of the item -->
-                <div class="icons">
-                    <a href="#"><i class="fas fa-palette"></i></a> <!-- Palette icon link -->
-                    <a href="#"><i class="fas fa-search"></i></a> <!-- Search icon link -->
                 </div>
             </div>
-        </div>
-        
-        <!-- Centered gallery item -->
-        <div class="gallery-item center-item">
-            <img src="img/pexels-antonio-filigno-159809-10210881.jpg" alt="Photography Moments"> <!-- Image of the item -->
-            <div class="overlay">
-                <div class="title">Photography</div> <!-- Title of the item -->
-                <div class="description">Explore captivating moments through photography.</div> <!-- Description of the item -->
-                <div class="icons">
-                    <a href="#"><i class="fas fa-camera"></i></a> <!-- Camera icon link -->
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a> <!-- External link icon link -->
+        </section>
+        <section id="about">
+            <div class="about-parent">
+                <div class="about-title">
+                    <h2>about</h2>
+                    <div class="under-line"></div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fas fa-history"></i></div>
+                    <h2>Museum History</h2>
+                    <p>Exploring the Museum's Foundation and Vision</p>
+                </div>
+
+                <div class="box center-box">
+                    <div class="icon"><i class="fas fa-archive"></i></div>
+                    <h2>Our Collections</h2>
+                    <p>Reviewing Unique Artifacts in the Museum</p>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fas fa-calendar-alt"></i></div>
+                    <h2>Cultural Initiatives</h2>
+                    <p>A Close Look at Events and Educational Programs</p>
                 </div>
             </div>
-        </div>
-        
-        <!-- Another gallery item -->
-        <div class="gallery-item">
-            <img src="img/pexels-bopopics-14790377.jpg" alt="Paintings Collection"> <!-- Image of the item -->
-            <div class="overlay">
-                <div class="title">Paintings Collection</div> <!-- Title of the item -->
-                <div class="description">Explore our diverse collection of paintings from different eras.</div> <!-- Description of the item -->
-                <div class="icons">
-                    <a href="#"><i class="fas fa-palette"></i></a> <!-- Palette icon link -->
-                    <a href="#"><i class="fas fa-search"></i></a> <!-- Search icon link -->
+        </section>
+        <section id="galary">
+            <div class="galary-parent">
+                <div class="galary-title">
+                    <h2>Masterpieces</h2>
+                    <div class="under-line"></div>
                 </div>
-            </div>
-        </div>
-        
-        <!-- Another gallery item -->
-        <div class="gallery-item">
-            <img src="img/pexels-giona-mason-1751396-18792764.jpg" alt="Sculptures Exhibition"> <!-- Image of the item -->
-            <div class="overlay">
-                <div class="title">Sculptures Exhibition</div> <!-- Title of the item -->
-                <div class="description">Discover the craftsmanship of our featured sculptures.</div> <!-- Description of the item -->
-                <div class="icons">
-                    <a href="#"><i class="fas fa-statue"></i></a> <!-- Statue icon link -->
-                    <a href="#"><i class="fas fa-info-circle"></i></a> <!-- Info circle icon link -->
+                <div class="box">
+                    <img src="img/pexels-antonio-filigno-159809-10210879.jpg" alt="">
+                    <div class="overlay">
+                        <div class="title">Art Collection</div>
+                        <div class="description">Explore our diverse collection of artworks.</div>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-palette"></i></a>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        
-        <!-- Centered gallery item -->
-        <div class="gallery-item center-item">
-            <img src="img/pexels-nici-gottstein-138431104-14681328.jpg" alt="Historical Artifacts"> <!-- Image of the item -->
-            <div class="overlay">
-                <div class="title">Historical Artifacts</div> <!-- Title of the item -->
-                <div class="description">Learn about the historical significance of our ancient artifacts.</div> <!-- Description of the item -->
-                <div class="icons">
-                    <a href="#"><i class="fas fa-landmark"></i></a> <!-- Landmark icon link -->
-                    <a href="#"><i class="fas fa-book"></i></a> <!-- Book icon link -->
+                <div class="box center-box">
+                    <img src="img/pexels-antonio-filigno-159809-10210881.jpg" alt="">
+                    <div class="overlay">
+                        <div class="title">Photography</div>
+                        <div class="description">Explore captivating moments through photography.</div>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-camera"></i></a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        
-        <!-- Another gallery item -->
-        <div class="gallery-item">
-            <img src="img/pexels-nici-gottstein-138431104-14681329.jpg" alt="Digital Art Showcase"> <!-- Image of the item -->
-            <div class="overlay">
-                <div class="title">Digital Art Showcase</div> <!-- Title of the item -->
-                <div class="description">Experience the innovation in our digital art collection.</div> <!-- Description of the item -->
-                <div class="icons">
-                    <a href="#"><i class="fas fa-laptop"></i></a> <!-- Laptop icon link -->
-                    <a href="#"><i class="fas fa-video"></i></a> <!-- Video icon link -->
+                <div class="box">
+                    <img src="img/pexels-bopopics-14790377.jpg" alt="">
+                    <div class="overlay">
+                        <div class="title">Paintings Collection</div>
+                        <div class="description">Explore our diverse collection of paintings from different eras.</div>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-palette"></i></a>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
                 </div>
+                <div class="box">
+                    <img src="img/pexels-giona-mason-1751396-18792764.jpg" alt="">
+                    <div class="overlay">
+                        <div class="title">Sculptures Exhibition</div>
+                        <div class="description">Discover the craftsmanship of our featured sculptures.</div>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-statue"></i></a>
+                            <a href="#"><i class="fas fa-info-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box center-box">
+                    <img src="img/pexels-nici-gottstein-138431104-14681328.jpg" alt="">
+                    <div class="overlay">
+                        <div class="title">Historical Artifacts</div>
+                        <div class="description">Learn about the historical significance of our ancient artifacts.</div>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-landmark"></i></a>
+                            <a href="#"><i class="fas fa-book"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/pexels-nici-gottstein-138431104-14681329.jpg" alt="">
+                    <div class="overlay">
+                        <div class="title">Digital Art Showcase</div>
+                        <div class="description">Experience the innovation in our digital art collection.</div>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-laptop"></i></a>
+                            <a href="#"><i class="fas fa-video"></i></a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="protifolio">
+            <div class="protifolio-parent">
+                <div class="protifolio-title">
+                    <h2>Our Services</h2>
+                    <div class="under-line"></div>
+                </div>
+                <div class="museum-box">
+                    <div class="icon"><i class="fas fa-hourglass-half"></i></div>
+                    <div class="title">Ancient Artifacts</div>
+                    <div class="subtitle">Explore artifacts from ancient Egypt</div>
+                </div>
+
+                <div class="museum-box center-box">
+                    <div class="icon"><i class="fas fa-book-open"></i></div>
+                    <div class="title">Hieroglyphs Decoded</div>
+                    <div class="subtitle">Unravel the secrets of hieroglyphic writing</div>
+                </div>
+
+                <div class="museum-box ">
+                    <div class="icon"><i class="fas fa-pyramid"></i></div>
+                    <div class="title">Pyramids and Tombs</div>
+                    <div class="subtitle">Discover the wonders of Egyptian pyramids</div>
+                </div>
+
+                <div class="museum-box">
+                    <div class="icon"><i class="fas fa-paw"></i></div>
+                    <div class="title">The Enigmatic Sphinx</div>
+                    <div class="subtitle">Learn about the mythical Sphinx statue</div>
+                </div>
+
+                <div class="museum-box center-box">
+                    <div class="icon"><i class="fas fa-desktop"></i></div>
+                    <div class="title">Interactive Exhibits</div>
+                    <div class="subtitle">Engage with interactive displays</div>
+                </div>
+
+                <div class="museum-box">
+                    <div class="icon"><i class="fas fa-scroll"></i></div>
+                    <div class="title">Rich History</div>
+                    <div class="subtitle">Explore Egypt's rich historical narrative</div>
+                </div>
+
             </div>
-        </div>
-    </div>
-</section>
-
-
-       <!-- Portfolio Section -->
-<section id="protifolio">
-    <div class="protifolio-parent">
-        <!-- Section Title -->
-        <div class="protifolio-title">
-            <h2>Our Services</h2>
-            <div class="under-line"></div> <!-- Underline for visual emphasis -->
-        </div>
-        
-        <!-- Individual Service Boxes -->
-        <div class="museum-box">
-            <div class="icon"><i class="fas fa-hourglass-half"></i></div> <!-- Icon representing time -->
-            <div class="title">Ancient Artifacts</div> <!-- Title of the service -->
-            <div class="subtitle">Explore artifacts from ancient Egypt</div> <!-- Description of the service -->
-        </div>
-
-        <div class="museum-box center-box">
-            <div class="icon"><i class="fas fa-book-open"></i></div> <!-- Icon representing books -->
-            <div class="title">Hieroglyphs Decoded</div>
-            <div class="subtitle">Unravel the secrets of hieroglyphic writing</div>
-        </div>
-
-        <div class="museum-box">
-            <div class="icon"><i class="fas fa-pyramid"></i></div> <!-- Icon representing pyramids -->
-            <div class="title">Pyramids and Tombs</div>
-            <div class="subtitle">Discover the wonders of Egyptian pyramids</div>
-        </div>
-
-        <div class="museum-box">
-            <div class="icon"><i class="fas fa-paw"></i></div> <!-- Icon representing the Sphinx -->
-            <div class="title">The Enigmatic Sphinx</div>
-            <div class="subtitle">Learn about the mythical Sphinx statue</div>
-        </div>
-
-        <div class="museum-box center-box">
-            <div class="icon"><i class="fas fa-desktop"></i></div> <!-- Icon representing interactive displays -->
-            <div class="title">Interactive Exhibits</div>
-            <div class="subtitle">Engage with interactive displays</div>
-        </div>
-
-        <div class="museum-box">
-            <div class="icon"><i class="fas fa-scroll"></i></div> <!-- Icon representing historical scrolls -->
-            <div class="title">Rich History</div>
-            <div class="subtitle">Explore Egypt's rich historical narrative</div>
-        </div>
-
-    </div>
-</section>
-
- <section id="price">
+        </section>
+        <section id="price">
             <div class="price-parent">
                 <div class="price-text">
                     <div class="price-title">
